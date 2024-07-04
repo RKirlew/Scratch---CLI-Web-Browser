@@ -36,7 +36,7 @@ int main(int argc, char *argv[]) {
 
     //Check if the user provided a scheme (http or https), if not, prepend "https://"
     const char *url = argv[1];
-    char full_url[256]; // Adjust size as needed
+    char full_url[256]; 
     if(strncmp(url, "http://", 7) && strncmp(url, "https://", 8)) {
         snprintf(full_url, sizeof(full_url), "https://%s", url);
     } else {
